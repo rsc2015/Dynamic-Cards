@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dynamic Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="cards.css"/>
+</head>
+<body>
+        <div class="container-fluid text-center"> 
+                <div class="row content">
+                        <div class="col-sm-2"></div>
+                        <div class="col-lg-8">
+    <div class="panel panel-default">
+        <div class="panel-heading" id="dynamicCards">Panel Heading</div>
+        <div class="panel-body" id="cardDisplay"></div>
+        <div class="panel-footer" id="TypeMessage"><div class="form-group">
+                <label for="comment">TYPE YOUR MESSAGE IN THE BOX BELOW:</label>
+                <textarea class="form-control" rows="5" id="postMessage"></textarea>
+                <div class="container">
+                        <button type="button" class="btn btn-primary btn-lg" id="createButton">create</button>
+                      </div>
+              </div></div>
+      </div>
+      </div><!--col-lg-8-->
+      <div class="col-sm-2"></div>
+      </div><!--row content-->
+      </div><!--container-fluid -->
+      <script src="cards.js"></script>
+</body>
+</html>
