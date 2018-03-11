@@ -39,3 +39,8 @@ body {
               margin-top:10px;
               font-size: 15px;
             }
+
+            .newMsg{
+              width: 30%;
+              height: 30%;
+            }
