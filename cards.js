@@ -1,22 +1,32 @@
 console.log("cards.js");
 
-// function displayContainer(){
-//     let arrayOfCards;
 
+  //created a function for the createButton
+   let btn = document.getElementById("createButton");
+    btn.addEventListener("click", () => {
+    let cardMsg1 = document.getElementById("postMessage").value;
+    console.log("cardMsg1", cardMsg1);
 
-    
-//     +=`<div id="messag1" class="is-hidden">
-//     <h3>Card Message</h3>
-//     <div id="card-no1">
-//      ${message}
-//     </div>
-//     <div id="cart-price"></div>
-//     <button id="deleteButton">delete</button>
-//   </div>`
-// }
+  //  let delBtn = document.createElement("BUTTON");
+  //  let t = document.createTextNode("delete");
+  //  delBtn.appendChild(t);
+  //  document.getElementById("cardDisplay").append(delBtn);
 
+  // a existing node
+  let addMsg = document.getElementById("cardDisplay");
 
-//created  function to the deleteButton at the card message
+  // create your new node
+  let newMsg = document.createElement('DIV');
+
+  // insert after
+  addMsg.insertAdjacentElement("beforebegin", newMsg);
+
+  newMsg.innerHTML += `<div class="newMsg">${cardMsg1}</div>`;
+  //document.getElementById("cardDisplay").append(`<div class = "newMsg">${cardMsg1} ${btn}</div>`);
+  
+});
+
+//creat  function for the deleteButton  
 // var dBtn = document.getElementById("deleteButton");
 
 // dBtn.addEventListener("click", () => {
@@ -24,10 +34,12 @@ console.log("cards.js");
 //     elem.parentNode.removeChild(elem);
 // });
 
-  //created a function for the createButton
-  var btn = document.getElementById("createButton");
-btn.addEventListener("click", () => {
-    document.getElementById("message1").className -= "is-hidden";
-    document.getElementById("card-no1").innerHTML += `${message}`;
-});
+// delBtn.addEventListener("click", () => {
+
+
+
+// }
+
+
+
 
